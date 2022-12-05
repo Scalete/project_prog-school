@@ -1,3 +1,24 @@
 .action {
-    
+    border-radius: $main-border-radius;
+
+    &.login {
+        display: flex;
+        align-items: center;
+        padding: 9px 16px;
+        font-weight: 500;
+        color: $white;
+        background: linear-gradient(to right, $primary-orange 50%, $primary-light-blue 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: background-position $normal ease-out;
+
+        svg {
+            margin-right: 5px;
+            fill: $white;
+        }
+
+        &:hover {
+            background-position: left bottom;
+        }
+    }
 }

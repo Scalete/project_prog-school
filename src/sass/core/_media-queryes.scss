@@ -5,6 +5,13 @@
     }
 }
 
+// tablet
+@mixin tablet {
+    @media screen and (max-width: #{$screen-mid-max}) {
+        @content;
+    }
+}
+
 // mobile
 @mixin mobile {
     @media screen and (max-width: #{$screen-sm-max}) {

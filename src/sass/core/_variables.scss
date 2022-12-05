@@ -6,7 +6,12 @@ $font-manrope           :  'Manrope', Arial, Helvetica, sans-serif;
 // colors
 $white                  : #FFFFFF;
 $black                  : #000000;
-
+$primary-black          : #22253B;
+$primary-second-black   : #3C3E50;
+$primary-blue           : #EAF2F5;
+$primary-light-blue     : #38BFF2;
+$primary-orange         : #F15525;
+$primary-overlay        : #393B4F;
 
 
 // transition
@@ -16,4 +21,8 @@ $normal                 : .5s;
 
 // breakpoints
 $screen-sm-max          : 767px;
-$screen-sm-min          : 768px;
+$screen-mid-max         : 1024px;
+$screen-sm-min          : 1025px;
+
+//other
+$main-border-radius     : 75px; 
