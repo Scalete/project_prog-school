@@ -1,24 +1,36 @@
 .action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: $main-border-radius;
 
     &.login {
-        display: flex;
-        align-items: center;
         padding: 9px 16px;
+        @include block-gradient($primary-light-blue, $primary-orange);
         font-weight: 500;
         color: $white;
-        background: linear-gradient(to right, $primary-orange 50%, $primary-light-blue 50%);
-        background-size: 200% 100%;
-        background-position: right bottom;
-        transition: background-position $normal ease-out;
 
         svg {
             margin-right: 5px;
             fill: $white;
         }
+    }
 
-        &:hover {
-            background-position: left bottom;
+    &.test {
+        padding: 28px 40px;
+        @include block-gradient($primary-orange, $primary-light-blue);
+        font-size: 18px;
+        letter-spacing: -0.03em;
+        color: $white;
+
+        svg {
+            margin-left: 12px;
+            transform: rotate(-45deg);
+            fill: $white;
         }
+    }
+
+    &:hover {
+        background-position: left bottom;
     }
 }

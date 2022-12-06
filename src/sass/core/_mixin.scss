@@ -16,3 +16,11 @@
         @return calc(-1 * (#{$minValue}px + (#{$maxValue} - #{$minValue}) * ((100vw - #{$minWidth}px) / (#{$maxWidth} - #{$minWidth}))));
     }
 }
+
+//gradient hover
+@mixin block-gradient($from, $to) {
+    background: linear-gradient(to right, $to 50%, $from 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position $normal ease-out;
+}
