@@ -65,4 +65,10 @@ gulp.task('images', function () {
         .pipe(browserSync.stream());
 });
 
-gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'icons', 'html', 'images', 'fonts'));
+gulp.task('videos', function () {
+    return gulp.src("src/video/**/*")
+        .pipe(gulp.dest("dist/video"))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('default', gulp.parallel('watch', 'server', 'styles', 'scripts', 'icons', 'html', 'images', 'videos', 'fonts'));
