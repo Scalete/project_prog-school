@@ -1,0 +1,204 @@
+.price {
+    padding: res(60, 90) 10px res(37, 67);
+    background-color: $primary-gray;
+
+    h2 {
+        margin-bottom: res(25, 35);
+        font-weight: 600;
+        font-size: res(22, 46);
+        text-align: center;
+    }
+
+    &__info {
+        margin-bottom: 41px;
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+
+        p {
+            font-size: res(12, 16);
+            line-height: 1.3;
+        }
+    }
+
+    &__mobile-img {
+        display: none;
+    }
+
+    table {
+        padding: res(19, 36) res(20, 40);
+        background-color: $white;
+        border-radius: 30px;
+        text-align: left;
+        overflow-x: auto;
+
+        th {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.5;
+            color: $primary-light-blue;  
+        }
+
+        td {
+            width: 20%;
+            font-size: res(13, 20);
+            line-height: 1.25;
+
+            &:first-child {
+                width: 40%;
+            }
+        }
+
+        tbody {
+
+            tr:nth-child(odd) {
+                background-color: $primary-table-gray;
+                border-radius: 10px;
+            }
+
+            td {
+                &:first-child {
+                    padding: res(13, 17) 0 res(12, 15) 20px;
+                    border-top-left-radius: 10px;
+                    border-bottom-left-radius: 10px;
+                }
+
+                &:last-child {
+                    padding-right: 20px;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                }
+            }
+        }
+
+        tfoot td {
+            font-weight: 700;
+            font-size: res(19, 24);
+
+            &:first-child {
+                padding: res(25, 20) 0 0 20px;
+            }
+
+            &:last-child {
+                padding-right: 20px;
+            }
+        }
+    }
+
+    &__details {
+        margin: res(21, 25) 0 res(47, 33);
+        font-size: res(12, 16);
+        line-height: 1.5px;
+        color: $primary-text-gray;
+    }
+
+    &__anotation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: res(50, 65) res(20, 52);
+        background-color: $primary-blue;
+        border-radius: 30px;
+
+        p {
+            font-size: res(12, 17);
+            line-height: 1.29;
+        }
+    }
+
+    @include desktop {
+
+        &__info {
+            display: grid;
+            grid-template-columns: res(200, 390) 247px res(200, 390);
+            justify-content: center;
+            column-gap: res(20, 69);
+
+            p {
+                margin-left: 30px;
+            }
+        }
+
+        &__anotation {
+
+            p {
+                max-width: 600px;
+                margin: 0 23px 0 30px;
+            }
+
+            a {
+                flex: 1;
+                min-width: 300px;
+            }
+        }
+    }
+
+    @include tablet {
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+
+            li {
+                flex-direction: column;
+
+                &:last-child {
+                    p {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            p {
+                margin: 12px 0 20px;
+                max-width: 80%;
+                text-align: center;
+            }
+        }
+
+        &__anotation {
+            flex-direction: column;
+
+            p {
+                margin: 21px 0 17px;
+                line-height: 1.8;
+                text-align: center;
+            }
+
+            img {
+                width: 74px;
+                height: 66px;
+            }
+        }
+    }
+
+    @include mobile {
+
+        &__info {
+            margin-bottom: 0;
+        }
+
+        &__mobile-img {
+            display: block;
+            margin: 20px 0;
+        }
+
+        table {
+            display: block;
+            white-space: nowrap;
+
+            td {
+                padding-right: 50px !important;
+            }
+        }
+
+        &__anotation {
+            a {
+                width: 100%;
+                padding: 25px !important;
+            }
+        }
+    }
+}
