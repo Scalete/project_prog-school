@@ -1,0 +1,160 @@
+.footer {
+    padding-bottom: res(23, 32);
+    background-color: $primary-gray;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: res(32, 50);
+        margin-bottom: res(25, 28);
+        border-bottom: 1px solid $primary-footer-divider;
+    }
+
+    &__socials {
+        ul {
+            display: flex;
+            gap: 16px;
+            margin-top: res(25, 40);
+
+            svg {
+                transition: fill $fast;
+
+                &:hover {
+                    fill: $primary-orange;
+                }
+            }
+        }
+        
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        
+        span {
+            display: block;
+            max-width: 151px;
+            margin-left: 19px;
+            font-size: 16px;
+            line-height: 1.18;
+            color: $primary-text-gray;
+        }
+    }
+
+    &__menu {
+        margin-left: 20%;
+
+        li {
+            margin-bottom: 25px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            transition: color $fast;
+
+            &:hover {
+                color: $primary-orange;
+            }
+        }
+    }
+
+    &__additional-info {
+        display: flex;
+        flex-direction: column;
+
+        address {
+            display: flex;
+            flex-direction: column;
+        }
+
+        a {
+            font-size: 16px;
+            line-height: 1.4;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .tel {
+            margin-bottom: 4px;
+            color: $primary-light-blue;
+        }
+    }
+
+    &__address {
+        margin-top: auto;
+        line-height: 1.76;
+        color: $primary-text-gray;
+    }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        font-size: res(12, 16);
+        line-height: 1.43;
+        color: $primary-text-gray;
+
+        .link--ml {
+            margin-left: 20%;
+        }
+
+        a {
+            transition: color $fast;
+
+            &:hover {
+                color: $primary-orange;
+            }
+        }
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+    
+    @include mobile {
+        text-align: center;
+
+        &__logo {
+            text-align: left;
+        }
+        
+        &__wrapper {
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__socials {
+            margin-bottom: 43px;
+
+            ul {
+                justify-content: center;
+            }
+        }
+
+        &__menu {
+            margin-left: 0;
+            margin-bottom: 43px;
+        }
+
+        &__address {
+            margin-top: 35px;
+        }
+
+        &__info {
+            flex-direction: column;
+
+            .link--ml {
+                margin-left: 0;
+                margin-bottom: 6px;
+            }
+
+            span {
+                margin-bottom: 13px;
+            }
+        }
+    }
+}
