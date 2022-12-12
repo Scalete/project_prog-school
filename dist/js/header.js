@@ -45,4 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
             closeNav(closeElem);
         }
     });
+
+    new WOW().init();
 });

@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programming school</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
     <div class="overlay"></div>
 
-    <header class="header">
+    <header class="header wow animate__animated animate__slideInDown">
         <div class="header__wrapper">
             <div class="header__logo">
                 <svg width="53" height="20"><use xlink:href="#logo"></use></svg>
@@ -42,73 +43,73 @@
 
         <section class="promo">
             <div class="container">
-                <div class="promo__content">
+                <div class="promo__content wow animate__animated animate__bounceInLeft">
                     <h1>Школа <b>{</b><em>программирования</em><b>}</b> для тех, кому нужны реальные навыки, а не просто сертификат</h1>
                     <h4>Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам</h4>
-                    <a href="#" class="action test">Пройти тестирование<svg width="15" height="15"><use xlink:href="#mini-arrow"></use></svg></a>
+                    <a href="#" class="action test wow animate__animated animate__zoomIn animate__delay-1s">Пройти тестирование<svg width="15" height="15"><use xlink:href="#mini-arrow"></use></svg></a>
                 </div>
-                <div class="promo__img">
+                <div class="promo__img wow animate__animated animate__bounceInRight">
                     <img src="img/promo-img.svg" alt="Promo Computer">
                 </div>
             </div>
         </section>
 
         <section class="info">
-            <h2>Какие технологии вы изучите:</h2>
+            <h2 class="wow animate__animated animate__bounceInRight">Какие технологии вы изучите:</h2>
             <div class="container">
                 <div class="info__img">
-                    <img src="img/info.svg" alt="Promo Study">
+                    <img class="wow animate__animated animate__fadeIn" src="img/info.svg" alt="Promo Study">
                 </div>
                 <div class="info__content">
                     <ul class="info__tabs">
-                        <li class="dark-blue">Язык программирования Python</li>
-                        <li class="yellow">Сети</li>
-                        <li class="orange">Базы данных</li>
-                        <li class="green">Фреймворки Flask и Django</li>
-                        <li class="light-blue">Отладка и тестирование</li>
-                        <li class="very-dark-blue">Docker</li>
-                        <li class="purple">Git</li>
+                        <li class="dark-blue wow animate__animated animate__zoomIn animate__delay-1s">Язык программирования Python</li>
+                        <li class="yellow wow animate__animated animate__zoomIn animate__delay-2s">Сети</li>
+                        <li class="orange wow animate__animated animate__zoomIn animate__delay-3s">Базы данных</li>
+                        <li class="green wow animate__animated animate__zoomIn animate__delay-1s">Фреймворки Flask и Django</li>
+                        <li class="light-blue wow animate__animated animate__zoomIn animate__delay-2s">Отладка и тестирование</li>
+                        <li class="very-dark-blue wow animate__animated animate__zoomIn animate__delay-3s">Docker</li>
+                        <li class="purple wow animate__animated animate__zoomIn animate__delay-1s">Git</li>
                     </ul>
-                    <h3>Это необходимый минимум для современного backend-разработчика</h3>
+                    <h3 class="wow animate__animated animate__fadeInUp">Это необходимый минимум для современного backend-разработчика</h3>
                 </div>
             </div>
         </section>
 
         <section class="plan">
             <div class="container">
-                <h2>Обучение в YtYt – это удобно и результативно</h2>
+                <h2 class="wow animate__animated animate__bounceInLeft">Обучение в YtYt – это удобно и результативно</h2>
                 <ul class="plan__wrapper">
-                    <li>
+                    <li class="wow animate__animated animate__zoomIn">
                         <img src="img/plan-icons/source.svg" alt="Source Icon">
                         <h4>Огромное количество практики</h4>
                         <span>Более 500 самостоятельных заданий и 20 полноценных больших проектов</span>
                     </li>
-                    <li>
+                    <li class="wow animate__animated animate__zoomIn">
                         <img src="img/plan-icons/spiral.svg" alt="Spiral Icon">
                         <h4>Современные методики обучения</h4>
                         <span>Спиральное обучение: погружаемся в материал постепенно, виток за витком</span>
                     </li>
-                    <li>
+                    <li class="wow animate__animated animate__zoomIn">
                         <img src="img/plan-icons/computer.svg" alt="Computer Icon">
                         <h4>Простое и понятное изложение</h4>
                         <span>Вместо заумных терминов – примеры из реального мира</span>
                     </li>
-                    <li>
+                    <li class="wow animate__animated animate__zoomIn">
                         <img src="img/plan-icons/plan.svg" alt="Plan Icon">
                         <h4>Гибкий график занятий</h4>
                         <span>Учитесь в любое время в удобном для вас темпе</span>
                     </li>
-                    <li>
+                    <li class="wow animate__animated animate__zoomIn">
                         <img src="img/plan-icons/message.svg" alt="Message Icon">
                         <h4>Прямая связь с опытными программистами</h4>
                         <span>Задавайте вопросы и отправляйте свой код на проверку</span>
                     </li>
-                    <li>
+                    <li class="wow animate__animated animate__zoomIn">
                         <img src="img/plan-icons/salary.svg" alt="Salary Icon">
                         <h4>Оплата небольшими частями</h4>
                         <span>Платите только за тот материал, который сейчас изучаете, а не за весь курс сразу</span>
                     </li>
-                    <li>
+                    <li class="wow animate__animated animate__zoomIn">
                         <img src="img/plan-icons/telephone.svg" alt="Telephone Icon">
                         <div>
                             <h4>Быстрый и легкий возврат</h4>
@@ -121,9 +122,9 @@
 
         <section class="instruction">
             <div class="container">
-                <h2>Как происходит обучение на YtYt?</h2>
-                <h4>Обучение должно быть комфортным. Поэтому мы разработали собственную платформу для обучения программированию. На ней вы можете не только изучать теорию, но и запускать готовые примеры и даже писать свой собственный код.</h4>
-                <div class="instruction__video">
+                <h2 class="wow animate__animated animate__bounceInLeft">Как происходит обучение на YtYt?</h2>
+                <h4 class="wow animate__animated animate__bounceInRight">Обучение должно быть комфортным. Поэтому мы разработали собственную платформу для обучения программированию. На ней вы можете не только изучать теорию, но и запускать готовые примеры и даже писать свой собственный код.</h4>
+                <div class="instruction__video wow animate__animated animate__fadeInUp">
                     <img src="img/laptop.svg" alt="Laptop">
                     <div>
                         <a href="#"><svg width="12" height="14"><use xlink:href="#play-video-arrow"></use></svg></a>
@@ -131,23 +132,23 @@
                     </div>
                 </div>
                 <ul class="instruction__wrapper">
-                    <li>
+                    <li class="wow animate__animated animate__fadeIn">
                         <h2>01</h2>
                         <h3>Весь материал разбит на небольшие уроки</h3>
                         <span>Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.</span>
                     </li>
-                    <li>
+                    <li class="wow animate__animated animate__fadeIn">
                         <h2>02</h2>
                         <h3>Обучение через практику</h3>
                         <span>Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.</span>
                     </li>
-                    <li>
+                    <li class="wow animate__animated animate__fadeIn">
                         <h2>03</h2>
                         <h3>Нет ограничений по времени</h3>
                         <span>Можно совмещать учёбу с работой и другими делами. Не нужно выпрашивать академический отпуск, если пришлось сделать перерыв.</span>
                     </li>
                 </ul>
-                <div class="instruction__action">
+                <div class="instruction__action wow animate__animated animate__bounceInRight">
                     <a href="#" class="action test">Начать обучение<svg width="15" height="15"><use xlink:href="#mini-arrow"></use></svg></a>
                     <span>Попробуйте, первые уроки бесплатны, но нужно пройти тестирование</span>
                 </div>
@@ -158,21 +159,21 @@
             <div class="container">
                 <div class="support__wrapper">
                     <div class="first-row">
-                        <div class="image">
+                        <div class="image wow animate__animated animate__bounceInLeft">
                             <img src="img/work.svg" alt="Work">
                         </div>
-                        <div class="text">
+                        <div class="text wow animate__animated animate__bounceInRight">
                             <h2>Помощь и поддержка</h2>
                             <p>Если в процессе обучения возникнут сложности, вы всегда сможете задать вопрос своему наставнику.</p>
                             <p>Раз в несколько уроков вы будете получать большое задание, которое нужно будет сдавать на проверку код-ревьюеру. Он внимательно изучит ваш код, найдет ошибки и поможет вам стать лучше. </p>
                         </div>
                     </div>
                     <div class="second-row">
-                        <div class="text">
+                        <div class="text wow animate__animated animate__bounceInLeft">
                             <h2>Методика обучения</h2>
                             <p>Весь учебный материал структурирован по принципу «спирального обучения». Сначала вы получаете базовые знания, а затем на каждом витке спирали углубляетесь в изученные темы, доводя их понимание до совершенства. Такой подход упрощает обучение и гарантирует, что вы не пропустите ничего важного.</p>
                         </div>
-                        <div class="image">
+                        <div class="image wow animate__animated animate__bounceInRight">
                             <img src="img/programming.svg" alt="Programming">
                         </div>
                     </div>
@@ -182,8 +183,8 @@
 
         <section class="price">
             <div class="container">
-                <h2>Стоимость обучения</h2>
-                <ul class="price__info">
+                <h2 class="wow animate__animated animate__fadeInDown">Стоимость обучения</h2>
+                <ul class="price__info wow animate__animated animate__fadeIn">
                     <li>
                         <img src="img/price/calendar.svg" alt="Calendar Icon">
                         <p>Весь курс разбит на несколько блоков. Оплата поэтапная вы платите только за тот блок, который сейчас проходите.</p>
@@ -199,14 +200,14 @@
                 </ul>
                 <svg class="price__mobile-img" width="48" height="30" viewBox="0 0 48 30" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1.5" y="1.5" width="16.714" height="27" rx="3.5" fill="#F9F8FD" stroke="#C4C4C4" stroke-width="3"/><rect x="6" y="1" width="8" height="4" rx="2" fill="#C4C4C4"/><path d="M26 14a1 1 0 1 0 0 2v-2Zm21.707 1.707a1 1 0 0 0 0-1.414l-6.364-6.364a1 1 0 1 0-1.414 1.414L45.586 15l-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364ZM26 16h21v-2H26v2Z" fill="#C4C4C4"/></svg>
                 <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                    <thead>
+                    <thead class="wow animate__animated animate__fadeIn">
                         <tr>
                             <th>Блок</th>
                             <th>Стоимость</th>
                             <th>Расчетное время обучения (мес.) *</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody class="wow animate__animated animate__fadeIn">
                         <tr>
                             <td>Введение в программирование</td>
                             <td>Бесплатно</td>
@@ -243,7 +244,7 @@
                             <td>1.5</td>
                         </tr>
                     </tbody>
-                    <tfoot>
+                    <tfoot class="wow animate__animated animate__fadeIn">
                         <tr>
                             <td>Итого</td>
                             <td>79 400</td>
@@ -251,8 +252,8 @@
                         </tr>
                     </tfoot>
                   </table>
-                  <p class="price__details">* если занятиям уделяется около 20 часов в неделю</p>
-                  <div class="price__anotation">
+                  <p class="price__details wow animate__animated animate__fadeIn">* если занятиям уделяется около 20 часов в неделю</p>
+                  <div class="price__anotation wow animate__animated animate__fadeIn">
                     <img src="img/price/anotation.svg" alt="Anotation Icon">
                     <p>Все блоки проходятся строго по порядку. Пропустить какой-то блок или начать обучение с середины нельзя, даже если вы считаете, что уже знаете какую-то часть материала. Только так мы можем гарантировать, что вы получите все знания, предусмотренные учебной программой.</p>
                     <a class="action test" href="#">Начать обучение<svg width="15" height="15"><use xlink:href="#mini-arrow"></use></svg></a>
@@ -262,7 +263,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer wow animate__animated animate__fadeIn">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__socials">
@@ -350,6 +351,7 @@
         </symbol>
     </svg>
 
+    <script src="js/wow.min.js"></script>
     <script src="js/header.js"></script>
 
 </body>
